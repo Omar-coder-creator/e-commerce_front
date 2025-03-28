@@ -3,7 +3,7 @@ import { useCartContext } from '../context/CartContext'
 import { CartItemType } from '../types/cartTypes'
 
 const Cart = () => {
-    const [cart, setCart] = useCartContext()
+    const [cart] = useCartContext()
     
     if(!cart) return <p>no cart</p>
     if(cart.items.length == 0) return <p>cart is emty</p>

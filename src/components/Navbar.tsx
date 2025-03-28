@@ -15,6 +15,7 @@ const Navbar = () => {
                         
                         <li><Link to='/aboutus'>About Us</Link></li>
                         <li><Link to=''>Contact</Link></li>
+                        {authInfo?.isAdmin && <Link to='/admin'>Admin Space</Link>}
                     </ul>
                     <div className="auth-links">
                         {authInfo
@@ -23,7 +24,7 @@ const Navbar = () => {
                         }
                     </div>
                     <div className="cart">
-                        {authInfo && <Link to='/cart'>🛒 Cart</Link>}
+                        {authInfo?.isAdmin == false && <Link to='/cart'>🛒 Cart</Link>}
                     </div>
                 </nav>
             </header>

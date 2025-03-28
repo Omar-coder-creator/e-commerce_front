@@ -316,3 +316,31 @@ nav img {
 .product-item button:hover {
     background: #e5533d;
 }
+#sidebar{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.remove-btn{
+    background-color:#ff6347 ;
+}
+.details{
+    flex-direction: column;
+}
+
+#admin-sidebar{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#admin-products{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap: 10px;
+}
+.admin-product{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
